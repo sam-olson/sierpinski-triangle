@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Sierpinski Triangle</title>
+  <link href="style.css" type="text/css" rel="stylesheet">
+</head>
+<body>
+  <h1>Sierpinski Triangle</h1>
+  <p>This is a simulation of a
+    <a href="https://en.wikipedia.org/wiki/Sierpi%C5%84ski_triangle" target="_blank">
+      Sierpinski Triangle</a>. </p>
+  <div id = "canvasdiv" style="width:500px; height:500px;">
+    <canvas id="canvasOne" width="500" height="500"></canvas>
+  </div>
+  <div class="sliders">
+    Distance between points:
+    <input type="range" min="100" max="450" step="10" value="5" id="slider"><br>
+  </div>
+  <div class="sliders">
+    Simulation speed:
+    <input type="range" min="1" max="50" step="1" value="25" id="speed"><br>
+  </div>
+  <div id="counter">
+  Number of dots: <span id="n"></span>
+  </div>
+  <script src="animation.js"></script>
+</body>
+</html>
